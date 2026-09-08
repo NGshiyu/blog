@@ -19,18 +19,17 @@ minify: true
 # Define custom file paths. # [定义自定义文件路径]
 # Create your custom files in site directory `source/_data` and uncomment needed files below. # [在网站目录`source/_data`中创建自定义文件，并取消下面所需文件的注释]
 custom_file_path:
-#  head: source/_data/head.njk
+  head: source/_data/head.njk
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyStart: source/_data/post-body-start.njk
-  #  postBodyEnd: source/_data/post-body-end.njk
+  postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
   bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
-
 
 # ---------------------------------------------------------------
 # Scheme Settings # [方案设置]
@@ -51,16 +50,15 @@ lightdark:
   # Add @supports (color: light-dark(red, red)) check # [添加@supports (color: light-dark(red, red))检查]
   check_supports: true
 
-
 # ---------------------------------------------------------------
 # Site Information Settings # [网站信息设置]
 # ---------------------------------------------------------------
 
 favicon:
   small: /images/favicon-16x16.png # 浏览器标签页、书签、历史记录中的小图标 (16x16px)
-  medium: /images/favicon-32x32.png   # 高分辨率屏幕、Windows任务栏、Chrome应用图标 (32x32px)
-  apple_touch_icon: /images/apple-touch-icon-next.png  # iOS/Android设备添加到主屏幕时的图标 (180x180px)
-  safari_pinned_tab: /images/logo.svg  # macOS Safari标签页彩色图标、PWA应用图标
+  medium: /images/favicon-32x32.png # 高分辨率屏幕、Windows任务栏、Chrome应用图标 (32x32px)
+  apple_touch_icon: /images/apple-touch-icon-next.png # iOS/Android设备添加到主屏幕时的图标 (180x180px)
+  safari_pinned_tab: /images/logo.svg # macOS Safari标签页彩色图标、PWA应用图标
   android_manifest: /images/manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist) # [自定义Logo（警告：不支持Mist方案）]
@@ -84,8 +82,8 @@ creative_commons:
 open_graph:
   enable: true
   options:
-    type: 'blog'
-    image: /images/apple-touch-icon-next.png  # 建议放一张 1200x630 的图
+    type: "blog"
+    image: /images/apple-touch-icon-next.png # 建议放一张 1200x630 的图
   #twitter_card: <twitter:card>
   #twitter_id: <twitter:creator>
   #twitter_site: <twitter:site>
@@ -93,7 +91,6 @@ open_graph:
   #google_plus: <g+:profile_link>
   #fb_admins: <fb:admin_id>
   #fb_app_id: <fb:app_id>
-
 
 # ---------------------------------------------------------------
 # Menu Settings # [菜单设置]
@@ -118,7 +115,6 @@ menu:
 menu_settings:
   icons: true
   badges: false
-
 
 # ---------------------------------------------------------------
 # Sidebar Settings # [侧边栏设置]
@@ -152,7 +148,7 @@ sidebar:
 # Sidebar Avatar # [侧边栏头像]
 avatar:
   # Replace the default image and set the url here. # [替换默认图片并在此处设置URL]
-  url: /images/origin.jpg  #/images/avatar.gif
+  url: /images/origin.jpg #/images/avatar.gif
   # If true, the avatar will be displayed in circle. # [如果为true，头像将以圆形显示]
   rounded: false
   # If true, the avatar will be rotated with the cursor. # [如果为true，头像将随光标旋转]
@@ -203,7 +199,6 @@ toc:
   # Maximum heading depth of generated toc. # [生成的目录的最大标题深度]
   max_depth: 6
 
-
 # ---------------------------------------------------------------
 # Footer Settings # [页脚设置]
 # See: https://theme-next.js.org/docs/theme-settings/footer # [参见：https://theme-next.js.org/docs/theme-settings/footer]
@@ -241,7 +236,6 @@ footer:
     gongan_num:
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website # [公安备案的图标。登录并参见：https://beian.mps.gov.cn/web/business/businessHome/website]
     gongan_icon_url:
-
 
 # ---------------------------------------------------------------
 # Post Settings # [文章设置]
@@ -285,6 +279,10 @@ reward:
 #alipay: /images/alipay.png
 #paypal: /images/paypal.png
 #bitcoin: /images/bitcoin.png
+
+# Stripe Buy Button 打赏设置（自定义扩展）
+# 官方文档：https://docs.stripe.com/payment-links/share#embed-button
+
 
 # Subscribe through Telegram Channel, Twitter, etc. # [通过Telegram频道、Twitter等订阅]
 # Usage: `Key: permalink || icon` (Font Awesome) # [用法：`Key: permalink || icon` (Font Awesome)]
@@ -331,7 +329,6 @@ post_edit:
 # Available values: left | right | false # [可用值：left | right | false]
 post_navigation: left
 
-
 # ---------------------------------------------------------------
 # Custom Page Settings # [自定义页面设置]
 # See: https://theme-next.js.org/docs/theme-settings/custom-pages # [参见：https://theme-next.js.org/docs/theme-settings/custom-pages]
@@ -357,7 +354,6 @@ calendar:
   showDeleted: false
   singleEvents: true
   maxResults: 250
-
 
 # ---------------------------------------------------------------
 # Misc Theme Settings # [杂项主题设置]
@@ -442,7 +438,6 @@ github_banner:
   enable: true
   permalink: https://github.com/NGshiyu
 
-
 # ---------------------------------------------------------------
 # Font Settings # [字体设置]
 # ---------------------------------------------------------------
@@ -494,7 +489,6 @@ font:
     external: true
     family:
 
-
 # ---------------------------------------------------------------
 # SEO Settings # [SEO设置]
 # See: https://theme-next.js.org/docs/theme-settings/seo # [参见：https://theme-next.js.org/docs/theme-settings/seo]
@@ -524,7 +518,6 @@ yandex_site_verification:
 # Baidu Webmaster tools verification. # [百度网站管理员工具验证]
 # See: https://ziyuan.baidu.com/site # [参见：https://ziyuan.baidu.com/site]
 baidu_site_verification:
-
 
 # ---------------------------------------------------------------
 # Tags Settings # [标签设置]
@@ -602,7 +595,6 @@ math:
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex # [参见：https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex]
     copy_tex: false
 
-
 # ---------------------------------------------------------------
 # External Libraries # [外部库]
 # See: https://theme-next.js.org/docs/third-party-services/external-libraries # [参见：https://theme-next.js.org/docs/third-party-services/external-libraries]
@@ -648,7 +640,6 @@ quicklink:
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]). # [默认（true）将尝试在支持的情况下使用fetch() API（而不是link[rel=prefetch]）]
   priority: true
 
-
 # ---------------------------------------------------------------
 # Animation Settings # [动画设置]
 # ---------------------------------------------------------------
@@ -688,7 +679,6 @@ canvas_ribbon:
   size: 300 # The width of the ribbon # [彩带的宽度]
   alpha: 0.6 # The transparency of the ribbon # [彩带的透明度]
   zIndex: -1 # The display level of the ribbon # [彩带的显示级别]
-
 
 # ---------------------------------------------------------------
 # Comments Settings # [评论设置]
@@ -741,14 +731,14 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io # [更多信息：https://gitalk.github.io]
 gitalk:
-  enable: false  # 请在本地或 CI/CD 中启用
-  github_id: 'NGshiyu' # GitHub repo owner # [GitHub仓库所有者]
-  repo: 'blog' # Repository name to store issues # [存储问题的仓库名称]
+  enable: false # 请在本地或 CI/CD 中启用
+  github_id: "NGshiyu" # GitHub repo owner # [GitHub仓库所有者]
+  repo: "blog" # Repository name to store issues # [存储问题的仓库名称]
   # 请填入你的 GitHub Application Client ID # [GitHub应用程序客户端ID]
   client_id: ${env.GITALK_GITHUB_CLIENT_ID}
   # 请填入你的 GitHub Application Client Secret # [GitHub应用程序客户端密钥]
   client_secret: ${env.GITALK_GITHUB_CLIENT_SECRET}
-  admin_user: 'NGshiyu' # GitHub repo owner and collaborators, only these guys can initialize gitHub issues # [GitHub仓库所有者和协作者，只有这些人可以初始化GitHub问题]
+  admin_user: "NGshiyu" # GitHub repo owner and collaborators, only these guys can initialize gitHub issues # [GitHub仓库所有者和协作者，只有这些人可以初始化GitHub问题]
   distraction_free_mode: true # Facebook-like distraction free mode # [类似Facebook的无干扰模式]
   redirect_uri: https://ngshiyu.github.io/blog/
   # When the official proxy is not available, you can change it to your own proxy address # [当官方代理不可用时，您可以将其更改为自己的代理地址]
@@ -774,7 +764,7 @@ giscus:
   # 指定 GitHub discussion 的匹配规则
   mapping: title
   # 当 mapping 为 specific 时的特定术语
-#  term:
+  #  term:
   # 是否启用严格的标题匹配
   strict: 1
   # 是否启用主帖子上的反应
@@ -792,7 +782,6 @@ giscus:
   # 懒加载评论
   data_loading: lazy
 
-
 # Utterances
 # For more information: https://utteranc.es # [更多信息：https://utteranc.es]
 utterances:
@@ -807,7 +796,6 @@ utterances:
 # For more information: https://isso-comments.de # [更多信息：https://isso-comments.de]
 isso: # <data_isso>
 
-
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services # [文章小工具和内容共享服务]
 # See: https://theme-next.js.org/docs/third-party-services/post-widgets # [参见：https://theme-next.js.org/docs/third-party-services/post-widgets]
@@ -818,7 +806,6 @@ addtoany:
   enable: false
   # Example: bottons: # [facebook, twitter] [示例：buttons: [facebook, twitter]]
   buttons:
-
 
 # ---------------------------------------------------------------
 # Statistics and Analytics # [统计和分析]
@@ -889,7 +876,6 @@ busuanzi_count:
   post_views: true
   post_views_icon: far fa-eye
 
-
 # ---------------------------------------------------------------
 # Search Services # [搜索服务]
 # See: https://theme-next.js.org/docs/third-party-services/search-services # [参见：https://theme-next.js.org/docs/third-party-services/search-services]
@@ -912,7 +898,6 @@ local_search:
   unescape: true
   # Preload the search data when the page loads. # [页面加载时预加载搜索数据]
   preload: true
-
 
 # ---------------------------------------------------------------
 # Chat Services # [聊天服务]
@@ -940,7 +925,6 @@ chatra:
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer # [公钥，从控制台获取。参见：https://www.tidio.com/panel/settings/developer]
-
 
 # ---------------------------------------------------------------
 # CDN Settings # [CDN设置]

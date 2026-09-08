@@ -58,6 +58,98 @@ body
   text-indent 0
 
 // =============================================================================
+// Stripe 打赏按钮样式 — Apple 流光边框效果
+// =============================================================================
+
+// 流光旋转动画
+@keyframes stripe-glow-spin
+  0%
+    --stripe-glow-angle 0deg
+  100%
+    --stripe-glow-angle 360deg
+
+// 容器：撑满文章宽度
+.stripe-donate-container
+  margin 2em 0 0
+  text-align center
+  width 100%
+
+// 外框：用 padding + 伪元素实现流光边框
+.stripe-donate-inner
+  position relative
+  display block
+  padding 1.8em 2em
+  border-radius 14px
+  background var(--body-bg-color, #fff)
+  overflow hidden
+  z-index 0
+
+  // 流光边框层（伪元素）
+  &::before
+    content ''
+    position absolute
+    top -2px
+    left -2px
+    right -2px
+    bottom -2px
+    z-index -2
+    border-radius 16px
+    background conic-gradient(
+      from var(--stripe-glow-angle, 0deg),
+      #635bff 0%,
+      #a78bfa 15%,
+      #f472b6 30%,
+      #fb923c 45%,
+      #facc15 55%,
+      #34d399 70%,
+      #38bdf8 85%,
+      #635bff 100%
+    )
+    animation stripe-glow-spin 4s linear infinite
+    // 注册自定义属性以支持 conic-gradient 动画
+    // 若浏览器不支持 @property，则回退为静态渐变
+
+  // 遮罩层：露出 2px 的流光边框
+  &::after
+    content ''
+    position absolute
+    top 2px
+    left 2px
+    right 2px
+    bottom 2px
+    z-index -1
+    border-radius 12px
+    background var(--body-bg-color, #fff)
+
+  &:hover::before
+    animation-duration 2s
+    filter brightness(1.2) blur(1px)
+
+.stripe-donate-text
+  text-indent 0 !important
+  margin-bottom 1em !important
+  color var(--text-color, #555)
+  font-size 0.95em
+
+// Stripe Buy Button 容器居中
+.stripe-donate-btn-wrap
+  display flex
+  justify-content center
+  align-items center
+  min-height 48px
+
+// 暗色模式适配
+.darkmode
+  .stripe-donate-inner
+    background var(--body-bg-color, #1a1a2e)
+
+    &::after
+      background var(--body-bg-color, #1a1a2e)
+
+  .stripe-donate-text
+    color #ccc
+
+// =============================================================================
 // GitHub卡片样式模块 - Import方式
 // =============================================================================
 // 使用@import引入独立的GitHub卡片样式文件

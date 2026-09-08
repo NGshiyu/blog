@@ -1,0 +1,15 @@
+<!-- Stripe Buy Button 打赏区域 -->
+{%- if theme.stripe_donate and theme.stripe_donate.enable %}
+<div class="stripe-donate-container">
+  <div class="stripe-donate-inner">
+    <p class="stripe-donate-text">{{ theme.stripe_donate.message | default("如果这篇文章对你有帮助，欢迎请我喝杯咖啡 ☕") }}</p>
+    <div class="stripe-donate-btn-wrap">
+      <stripe-buy-button
+        buy-button-id="{{ theme.stripe_donate.buy_button_id }}"
+        publishable-key="{{ theme.stripe_donate.publishable_key }}"
+      >
+      </stripe-buy-button>
+    </div>
+  </div>
+</div>
+{%- endif %}
