@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       axios:
-        specifier: ^1.16.1
-        version: 1.16.1
+        specifier: ^1.17.0
+        version: 1.17.0
       hexo:
         specifier: ^8.0.0
         version: 8.1.1(chokidar@3.6.0)
@@ -85,7 +85,7 @@ importers:
         version: https://codeload.github.com/next-theme/hexo-next-three/tar.gz/f48367cda84b66bae67713e9a2ec0130d7d39198
       hexo-next-valine:
         specifier: github:next-theme/hexo-next-valine
-        version: https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/841534244f0cb28e043316d533b3c8137ebd4eb2
+        version: https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/ffe52cb7ddcfca9f62c35b9634b95959c884d0f5
       hexo-optimize:
         specifier: ^3.4.0
         version: 3.4.0
@@ -140,9 +140,6 @@ importers:
       hexo-theme-redefine:
         specifier: ^2.8.5
         version: 2.8.5
-      hexo-word-counter:
-        specifier: ^0.2.1
-        version: 0.2.2
       micromatch:
         specifier: ^4.0.8
         version: 4.0.8
@@ -442,8 +439,8 @@ packages:
   axios@0.26.1:
     resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
 
-  axios@1.16.1:
-    resolution: {integrity: sha512-caYkukvroVPO8KrzuJEb50Hm07KwfBZPEC3VeFHTsqWHvKTsy54hjJz9BS/cdaypROE2rH6xvm9mHX4fgWkr3A==}
+  axios@1.17.0:
+    resolution: {integrity: sha512-J8SwNxprqqpbfenehxWYXE7CW+wM1BB4w3+N+g+/Wx40xM4rsLrfPmHHxSWIxJLYDgSY/HqlFPIYb2/S3rxafw==}
 
   babel-walk@3.0.0-canary-5:
     resolution: {integrity: sha512-GAwkz0AihzY5bkwIY5QDR+LvsRQgB/B+1foMPvi0FZPMl5fjD7ICiznUiBdLYMH1QYe6vqu4gWYytZOccLouFw==}
@@ -559,10 +556,6 @@ packages:
   camelcase@2.1.1:
     resolution: {integrity: sha512-DLIsRzJVBQu72meAKPkWQOLcujdXT32hwdfnkI1frSiSRMK1MofjKHf+MEx0SB6fjEFXL8fBDv1dKymBlOp4Qw==}
     engines: {node: '>=0.10.0'}
-
-  cargo-cp-artifact@0.1.9:
-    resolution: {integrity: sha512-6F+UYzTaGB+awsTXg0uSJA1/b/B3DDJzpKVRu0UmyI7DmNeaAl2RFHuTGIN6fEgpadRxoXGb7gbC1xo4C3IdyA==}
-    hasBin: true
 
   caseless@0.12.0:
     resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==}
@@ -1389,8 +1382,8 @@ packages:
     resolution: {tarball: https://codeload.github.com/next-theme/hexo-next-three/tar.gz/f48367cda84b66bae67713e9a2ec0130d7d39198}
     version: 2.2.0
 
-  hexo-next-valine@https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/841534244f0cb28e043316d533b3c8137ebd4eb2:
-    resolution: {tarball: https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/841534244f0cb28e043316d533b3c8137ebd4eb2}
+  hexo-next-valine@https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/ffe52cb7ddcfca9f62c35b9634b95959c884d0f5:
+    resolution: {tarball: https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/ffe52cb7ddcfca9f62c35b9634b95959c884d0f5}
     version: 2.1.0
 
   hexo-optimize@3.4.0:
@@ -1475,9 +1468,6 @@ packages:
   hexo-util@4.0.0:
     resolution: {integrity: sha512-oXKXBs1HZ2Wu/eq0paAVqtCmAEcqJPZ4xxSVRuwAplm1hFU41Ul53WA5bmYMEz9Dp+OJ/SdchjXRmYlbGJdt3w==}
     engines: {node: '>=18'}
-
-  hexo-word-counter@0.2.2:
-    resolution: {integrity: sha512-ga/0MbBlN/Xu8I6orRKpYJ/z4aNe3U4honCwBePna8e5gTEeHeF4COs3u4U9x041p8OApFiWQxhYoNOqieEwYw==}
 
   hexo@5.4.2:
     resolution: {integrity: sha512-Af6mxKwx9byalaffKgiQ8/bZfbXPo2SGEn2Q9hFh++15g15/IulvOhu8lQkJdyZNzmj3hOuSrJdqoUvIr3K/qw==}
@@ -3223,7 +3213,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  axios@1.16.1:
+  axios@1.17.0:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.6
@@ -3381,8 +3371,6 @@ snapshots:
   camelcase@1.2.1: {}
 
   camelcase@2.1.1: {}
-
-  cargo-cp-artifact@0.1.9: {}
 
   caseless@0.12.0: {}
 
@@ -4155,7 +4143,7 @@ snapshots:
 
   hexo-bluesky-feed@0.1.14:
     dependencies:
-      axios: 1.16.1
+      axios: 1.17.0
       dotenv: 16.6.1
     transitivePeerDependencies:
       - debug
@@ -4367,7 +4355,7 @@ snapshots:
       terser: 5.46.0
       three: 0.163.0
 
-  hexo-next-valine@https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/841534244f0cb28e043316d533b3c8137ebd4eb2:
+  hexo-next-valine@https://codeload.github.com/next-theme/hexo-next-valine/tar.gz/ffe52cb7ddcfca9f62c35b9634b95959c884d0f5:
     dependencies:
       '@next-theme/utils': 1.3.0
 
@@ -4534,10 +4522,6 @@ snapshots:
       htmlparser2: 10.1.0
       prismjs: 1.30.0
       strip-indent: 3.0.0
-
-  hexo-word-counter@0.2.2:
-    dependencies:
-      cargo-cp-artifact: 0.1.9
 
   hexo@5.4.2(chokidar@3.6.0):
     dependencies:
